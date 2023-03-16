@@ -5,6 +5,5 @@
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
-.vscode
 dist
-ui/public/bundle.js
+frontend/public/bundle.js

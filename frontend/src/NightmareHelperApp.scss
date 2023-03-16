@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    body {
+        font-family: 'Trebuchet MS', sans-serif;
+    }
+}
+
+#root {
+    user-select: none;
+
+    .select-ghost-menu {
+        width: 30vw;
+        // flex-basis: 30%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        border: solid black 2px;
+        border-radius: 16px;
+        padding: 16px;
+
+        .ghost {
+            cursor: pointer;
+            flex: 1 0 25%;
+            margin: 8px;
+            font-weight: bold;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .ghost-name {
+                &:hover {
+                    color: gray;
+                }
+            }
+
+            .ghost-modifier {
+                width: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .impossible-ghost {
+            text-decoration: line-through;
+            color: lightgray;
+
+            .ghost-modifier {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .select-evidence-menu {
+        // flex-basis: 30%;
+        width: 30vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        border: solid black 2px;
+        border-radius: 16px;
+        padding: 16px;
+
+        .evidence {
+            flex-basis: 50%;
+
+            .evidence-inner {
+                cursor: pointer;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin: 4px;
+                font-weight: bold;
+                padding: 4px;
+                box-sizing: border-box;
+                border-radius: 32px;
+                outline: 1px solid lightgray;
+                transition: outline 0.1s;
+
+                &:active {
+                    background-color: gold;
+                    outline: 4px solid;
+                }
+            }
+
+            .evidence-selected {
+                outline: 2px solid green;
+                color: green;
+            }
+
+            .evidence-excluded {
+                outline: 1px dotted darkgray;
+                color: darkgray;
+                text-decoration: line-through;
+            }
+
+            .evidence-impossible {
+                outline: 1px dotted hotpink;
+                color: lightgray;
+                text-decoration: line-through;
+            }
+
+            .evidence-text {
+                &:hover {
+                    color: gray;
+                }
+            }
+        }
+    }
+
+    .background {
+        position: absolute;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
+        background: #fffef0;
+        z-index: -999;
+        overflow: hidden;
+    }
+}
+
+.steps-clicker {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border: solid black 2px;
+    border-radius: 16px;
+    padding: 16px;
+    margin-top: 16px;
+    width: 30vw;
+
+    div {
+        padding: 8px;
+        width: 20%;
+        outline: 1px solid lightgray;
+        border-radius: 16px;
+        text-align: center;
+        cursor: pointer;
+        font-weight: bold;
+        transition: outline 0.1s;
+
+        &:active {
+            background-color: gold;
+            outline: 4px solid;
+        }
+    }
+
+    .steps-button {
+        box-sizing: border-box;
+    }
+
+    .steps-apply {
+    }
+
+    .steps-clear {
+    }
+}
