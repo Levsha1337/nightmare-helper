@@ -80,7 +80,7 @@ export class StepsClicker extends React.Component<IProps> {
     applyGhostSpeed = (speed: number): void => {
         this.speedApplied = true;
 
-        this.props.applyGhostSpeed(speed);
+        this.props.applyGhostSpeed(speed / this.props.ghostSpeedModifier);
     };
 
     clearGhostSpeed = () => {
