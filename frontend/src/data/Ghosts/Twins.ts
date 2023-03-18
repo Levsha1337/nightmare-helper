@@ -6,8 +6,8 @@ const Twins: Partial<Ghost> = {
     name: 'Близнецы',
     evidences: [EvidenceEMF5, EvidenceRADIO, EvidenceTEMP],
     possibleSpeeds: [
-        [1.39, 1.49],
-        [1.71, 1.81]
+        [90, 110],
+        [120, 140]
     ]
 };
 

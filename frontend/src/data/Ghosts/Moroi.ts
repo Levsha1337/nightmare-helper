@@ -6,7 +6,7 @@ const Moroi: Partial<Ghost> = {
     name: 'Морой',
     evidences: [EvidenceRADIO, EvidenceBOOK, EvidenceTEMP],
     evidenceRequired: EvidenceRADIO,
-    possibleSpeeds: [[1.55, 2.55]]
+    possibleSpeeds: [[90, 175]]
 };
 
 export default Object.assign({}, defaultGhostConfig, Moroi) as Ghost;

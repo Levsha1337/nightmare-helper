@@ -5,7 +5,10 @@ const Revenant: Partial<Ghost> = {
     codeName: 'Revenant',
     name: 'Ревенант',
     evidences: [EvidenceORB, EvidenceBOOK, EvidenceTEMP],
-    possibleSpeeds: [[1.05, 1.15]]
+    possibleSpeeds: [
+        [50, 70],
+        [220, 260]
+    ]
 };
 
 export default Object.assign({}, defaultGhostConfig, Revenant) as Ghost;

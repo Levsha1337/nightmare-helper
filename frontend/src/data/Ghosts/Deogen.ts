@@ -7,8 +7,8 @@ const Deogen: Partial<Ghost> = {
     evidences: [EvidenceRADIO, EvidenceBOOK, EvidenceDOTS],
     evidenceRequired: EvidenceRADIO,
     possibleSpeeds: [
-        [0.35, 0.45],
-        [2.95, 3.05]
+        [50, 70],
+        [220, 260]
     ]
 };
 

@@ -19,7 +19,7 @@ const Mimic: Partial<Ghost> = {
 
         return !evidences.find((ev) => !ghost.evidences.find(compareEvidence(ev)));
     },
-    possibleSpeeds: [[0, 5]]
+    possibleSpeeds: [[0, 500]]
 };
 
 export default Object.assign({}, defaultGhostConfig, Mimic) as Ghost;

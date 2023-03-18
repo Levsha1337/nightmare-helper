@@ -40,7 +40,8 @@ export const defaultGhostResolver = (ghost: Ghost, evidences: Evidence[], maxCou
 
 // Не используем потенциальную скорость при виде игрока
 // export const defaultGhostSpeeds: PossibleGhostSpeeds = [[1.55, 2.55]];
-export const defaultGhostSpeeds: PossibleGhostSpeeds = [[1.55, 1.65]];
+// export const defaultGhostSpeeds: PossibleGhostSpeeds = [[1.55, 1.65]];
+export const defaultGhostSpeeds: PossibleGhostSpeeds = [[110, 120]];
 
 export const defaultGhostConfig: Partial<Ghost> = {
     codeName: undefined,

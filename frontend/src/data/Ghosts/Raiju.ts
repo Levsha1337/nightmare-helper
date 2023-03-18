@@ -5,7 +5,7 @@ const Raiju: Partial<Ghost> = {
     codeName: 'Raiju',
     name: 'Райдзю',
     evidences: [EvidenceEMF5, EvidenceORB, EvidenceDOTS],
-    possibleSpeeds: [...defaultGhostSpeeds, [1.55, 2.55]]
+    possibleSpeeds: [...defaultGhostSpeeds, [175, 195]]
 };
 
 export default Object.assign({}, defaultGhostConfig, Raiju) as Ghost;

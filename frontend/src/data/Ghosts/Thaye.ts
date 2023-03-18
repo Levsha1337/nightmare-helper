@@ -5,7 +5,7 @@ const Thaye: Partial<Ghost> = {
     codeName: 'Thaye',
     name: 'Тайэ',
     evidences: [EvidenceORB, EvidenceBOOK, EvidenceDOTS],
-    possibleSpeeds: [[0.95, 2.8]]
+    possibleSpeeds: [[50, 210]]
 };
 
 export default Object.assign({}, defaultGhostConfig, Thaye) as Ghost;

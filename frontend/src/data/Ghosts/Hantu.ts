@@ -6,7 +6,7 @@ const Hantu: Partial<Ghost> = {
     name: 'Ханту',
     evidences: [EvidencePRINTS, EvidenceORB, EvidenceTEMP],
     evidenceRequired: EvidenceTEMP,
-    possibleSpeeds: [[1.35, 2.75]]
+    possibleSpeeds: [[70, 190]]
 };
 
 export default Object.assign({}, defaultGhostConfig, Hantu) as Ghost;
