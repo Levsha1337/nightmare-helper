@@ -4,6 +4,7 @@
   "version": "1.0.1",
   "scripts": {
     "build": "yarn prebuild && webpack",
+    "production": "yarn prebuild --production && webpack",
     "dev": "prebuild && webpack serve",
     "prebuild": "node prebuild.js"
   },

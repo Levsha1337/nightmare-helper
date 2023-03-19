@@ -8,3 +8,4 @@
 dist
 frontend/public/bundle.js
 frontend/prebuild-values.json
+frontend/.env

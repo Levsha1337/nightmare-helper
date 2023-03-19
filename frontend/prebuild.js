@@ -13,7 +13,11 @@ const data = {
     commitHash: shortHash,
     commitFullHash: fullHash,
     commitLink: commitLink,
-    version: version
+    version: version,
+    production: process.argv.includes('--production')
 }
 
 fs.writeFileSync('prebuild-values.json', JSON.stringify(data));
+
+console.log('Prebuild config:');
+console.log(data);

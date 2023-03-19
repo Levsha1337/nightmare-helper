@@ -164,8 +164,13 @@ export class NightmareHelperApp extends React.Component<IProps> {
                                 </Layout>
                                 <Footer style={{textAlign: 'center'}}>
                                     {`Phasmophobia Nightmare Helper v${prebuildValues.version} `}
-                                    <a href={prebuildValues.commitLink}>{prebuildValues.commitHash}</a>
-                                    {` ©2023 by Levsha1337`}
+                                    {prebuildValues.production ? null : <a
+                                        target='_blank'
+                                        href={prebuildValues.commitLink}
+                                    >
+                                        {`(${prebuildValues.commitHash}, build at ${`${new Date(prebuildValues.buildTimestamp).toLocaleDateString()} ${new Date(prebuildValues.buildTimestamp).toLocaleTimeString()}`}) `}
+                                    </a>}
+                                    {`©2023 by Levsha1337`}
                                 </Footer>
                             </Layout>
                         </Space>
