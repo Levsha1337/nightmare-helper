@@ -7,5 +7,6 @@
     ],
     "devDependencies": {
         "typescript": "latest"
-    }
+    },
+    "version": "1.0.0"
 }
