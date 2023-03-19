@@ -14,7 +14,7 @@ import GhostList from './data/GhostList';
 import {Ghost} from './data/Ghost';
 import {Modifier} from './data/Modifier';
 import {StepsClicker} from './cmp/StepsClicker';
-import packageJson from '../package.json';
+import prebuildValues from '../prebuild-values.json';
 
 const {Header, Footer} = Layout;
 
@@ -163,7 +163,9 @@ export class NightmareHelperApp extends React.Component<IProps> {
                                     </Row>
                                 </Layout>
                                 <Footer style={{textAlign: 'center'}}>
-                                    {`Phasmophobia Nightmare Helper v${packageJson.version} ©2023 by Levsha1337`}
+                                    {`Phasmophobia Nightmare Helper v${prebuildValues.version} `}
+                                    <a href={prebuildValues.commitLink}>{prebuildValues.commitHash}</a>
+                                    {` ©2023 by Levsha1337`}
                                 </Footer>
                             </Layout>
                         </Space>

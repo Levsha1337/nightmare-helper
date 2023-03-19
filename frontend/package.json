@@ -3,8 +3,9 @@
   "packageManager": "yarn@3.4.1",
   "version": "1.0.1",
   "scripts": {
-    "build": "webpack",
-    "dev": "webpack serve"
+    "build": "yarn prebuild && webpack",
+    "dev": "prebuild && webpack serve",
+    "prebuild": "node prebuild.js"
   },
   "dependencies": {
     "antd": "^5.2.2",
